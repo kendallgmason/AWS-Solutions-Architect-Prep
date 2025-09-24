@@ -36,7 +36,7 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 - Always terminate/delete resources immediately after use
 
 ## Screenshot of Budget Setup
-![Budget Setup in AWS](screenshots/create-user.png)
+![Budget Setup in AWS](images/Budget Setup.png)
 
 
 
