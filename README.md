@@ -19,7 +19,26 @@ Each section contains:
 
 ---
 
-## Example: EC2 Lab
+# Section 4 – IAM (Identity & Access Management)
+
+## What I learned
+- IAM allows you to **control access** to AWS resources.
+- Users, Groups, Roles, and Policies are the building blocks.
+- AWS best practice: **Least privilege principle** — only give permissions needed.
+- IAM roles can be assigned to EC2 instances or Lambda for temporary access.
+
+## What I did
+1. Created an IAM user for lab purposes.
+2. Attached a policy (`AmazonS3ReadOnlyAccess`) to limit permissions.
+3. Created an IAM group and added the user to it.
+4. Created an IAM role and attached it to an EC2 instance.
+5. Experimented with logging in as the IAM user and verifying permissions.
+
+## Screenshots
+![Create IAM User](screenshots/create-user.png)
+![Attach Policy](screenshots/attach-policy.png)
+
+# Section 5 – EC2 Fundamentals
 📌 **What I learned:**  
 - EC2 = Elastic Compute Cloud → virtual servers on demand.  
 - Pricing models: On-Demand, Reserved, Spot, Dedicated.  
