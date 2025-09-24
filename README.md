@@ -36,7 +36,7 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 - Always terminate/delete resources immediately after use
 
 ## Screenshot of Budget Setup
-![Budget Setup in AWS](Budget Setup.png)
+![Budget Setup in AWS](images/Budget-Setup.png)
 
 
 
@@ -56,21 +56,23 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 5. Experimented with logging in as the IAM user and verifying permissions.
 
 ## Screenshots
-![Create IAM User](screenshots/create-user.png)
-![Attach Policy](screenshots/attach-policy.png)
+![Create IAM User](images/IAM-User-Created.png)
+![Attach Policy](images/IAM-Read-Only.png)
 
 # Section 5 – EC2 Fundamentals
 📌 **What I learned:**  
 - EC2 = Elastic Compute Cloud → virtual servers on demand.  
 - Pricing models: On-Demand, Reserved, Spot, Dedicated.  
-- Security groups act like virtual firewalls.  
+- Security groups act like virtual firewalls and how to add rules.   
 
 🛠 **What I did:**  
 1. Launched a t2.micro EC2 instance in the AWS Free Tier.  
 2. Connected via SSH.  
-3. Terminated the instance safely.  
+3. Terminated the instance safely.
+4. Added Security Groups and added/took away rules to show how it blocks certain protocols like HTTP. 
 
 📸 **Screenshots:**  
-![EC2 Launch](section-05-ec2/screenshots/launch-ec2.png)  
-![EC2 Terminate](section-05-ec2/screenshots/terminate-ec2.png)
+![EC2 Launch](images/EC2-Running.png)  
+![EC2 Stopped](images/EC2-Stopped.png)
+![Security Group Inbound Rules](images/Inbound-Rules.png)
 
