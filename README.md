@@ -19,6 +19,27 @@ Each section contains:
 
 ---
 
+# AWS Free Tier & Cost Awareness
+
+While working through these AWS SAA labs, I’ve ensured all resources stay within the Free Tier to avoid unnecessary costs.  
+
+## Budget Setup
+- AWS Budget: $0.01 monthly
+- Notifications sent to my email/SNS to alert on any usage beyond Free Tier
+
+## Free Tier Practices
+- EC2: Only t2.micro or t3.micro instances
+- S3: Max 5GB standard storage
+- RDS: Free Tier databases (MySQL/PostgreSQL)
+- Lambda: <= 1M requests/month
+- CloudFront: <= 50GB/month
+- Always terminate/delete resources immediately after use
+
+## Screenshot of Budget Setup
+![Budget Setup in AWS](screenshots/create-user.png)
+
+
+
 # Section 4 – IAM (Identity & Access Management)
 
 ## What I learned
