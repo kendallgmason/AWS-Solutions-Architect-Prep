@@ -63,16 +63,20 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 📌 **What I learned:**  
 - EC2 = Elastic Compute Cloud → virtual servers on demand.  
 - Pricing models: On-Demand, Reserved, Spot, Dedicated.  
-- Security groups act like virtual firewalls and how to add rules.   
+- Security groups act like virtual firewalls and how to add rules.
+- SSH into instance from CLI on own computer.   
 
 🛠 **What I did:**  
-1. Launched a t2.micro EC2 instance in the AWS Free Tier.  
-2. Connected via SSH.  
-3. Terminated the instance safely.
-4. Added Security Groups and added/took away rules to show how it blocks certain protocols like HTTP. 
+1. Launched a t2.micro EC2 instance in the AWS Free Tier.
+2. Added .PEM key onto my mac. 
+3. Connected via SSH from my own computer into an ec2 I created on AWS.  
+4. Terminated the instance safely.
+5. Added Security Groups and added/took away rules to show how it blocks certain protocols like HTTP.
 
 📸 **Screenshots:**  
 ![EC2 Launch](images/EC2-Running.png)  
 ![EC2 Stopped](images/EC2-Stopped.png)
 ![Security Group Inbound Rules](images/Inbound-Rules.png)
+![SSH from my own MAC into AWS instance](images/SSH-AWS-instance.png)
+
 
