@@ -79,6 +79,8 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![Security Group Inbound Rules](images/Inbound-Rules.png)
 ![SSH from my own MAC into AWS instance](images/SSH-AWS-instance.png)
 
+# Section 6 – EC2 (Solutions Architect Associate Level)
+
 ### What I Learned
 - Placement Groups logically organize EC2 instances to meet specific performance or HA needs.
 - **Cluster**: tightly packs instances in one AZ for low-latency, high-throughput networking.
