@@ -79,4 +79,22 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![Security Group Inbound Rules](images/Inbound-Rules.png)
 ![SSH from my own MAC into AWS instance](images/SSH-AWS-instance.png)
 
+### What I Learned
+- Placement Groups logically organize EC2 instances to meet specific performance or HA needs.
+- **Cluster**: tightly packs instances in one AZ for low-latency, high-throughput networking.
+- **Spread**: distributes instances across different racks → improves fault tolerance.
+- **Partition**: separates groups of instances across partitions (good for Hadoop, Kafka).
+
+### What I Did
+1. Created a Placement Group in the AWS Console:
+   - EC2 Dashboard → Placement Groups → Create.
+   - Named it `test-cluster-group` and chose **Cluster** strategy.
+2. Launched a new EC2 instance and assigned it to the Placement Group under **Advanced Details**.
+3. Verified the instance was running in the group via the EC2 → Placement Groups view.
+
+### Screenshots
+![Create Placement Group](images/Placement-Groups.png)
+![Select Placement Group on Launch of EC2](images/Adding-EC2-Placement-Group)
+
+
 
