@@ -94,7 +94,7 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 
 ### Screenshots
 ![Create Placement Group](images/Placement-Groups.png)
-![Select Placement Group on Launch of EC2](images/Adding-EC2-Placement-Group)
+![Select Placement Group on Launch of EC2](images/Adding-EC2-Placement-Group.png)
 
 
 
