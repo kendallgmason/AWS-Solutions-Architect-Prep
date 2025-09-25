@@ -129,7 +129,7 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![EBS Volume](images/CreateEBSVolumeAndAttach.png)
 ![Snapshot](images/CreateVolumeFromSnapshot.png)
 ![AMI Creation](images/CustomAMItoNewEC2.png)
-![EFS Mount](images/EFS.png)
+![EFS Mount](inmages/EFS.png)
 
 
 
