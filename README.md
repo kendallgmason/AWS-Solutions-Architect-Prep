@@ -9,7 +9,7 @@ Each section contains:
 
 ## Sections Completed
 - [x] IAM & AWS Fundamentals
-- [ ] EC2 Deep Dive (in progress)
+- [x] EC2 Deep Dive (in progress)
 - [ ] Elastic Load Balancing & Auto Scaling
 - [ ] S3 & CloudFront
 - [ ] RDS, DynamoDB, Aurora
