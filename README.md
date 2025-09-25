@@ -98,5 +98,39 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![Create Placement Group](images/Placement-Groups.png)
 ![Select Placement Group on Launch of EC2](images/Adding-EC2-Placement-Group.png)
 
+# Section 7 – EC2 Instance Storage
+
+## What I Learned
+- **EBS (Elastic Block Store)**:
+  - Network-attached storage for EC2.
+  - Types:
+    - GP2/GP3 → general purpose, balances cost and performance.
+    - IO1/IO2 → provisioned IOPS, for databases.
+    - ST1 → throughput optimized HDD, for big data.
+    - SC1 → cold HDD, lowest cost.
+  - Supports snapshots (backups) and encryption at rest.
+- **Instance Store**:
+  - Temporary storage physically attached to the host.
+  - High performance but data is lost when the instance stops/terminates.
+- **EFS (Elastic File System)**:
+  - Fully managed NFS file system.
+  - Shared across multiple EC2 instances, scales automatically.
+- **AMI (Amazon Machine Images)**:
+  - Templates that bundle an EC2’s configuration (OS, EBS volumes, software).
+  - Can be created from a running instance → launch new instances consistently.
+
+## What I Did
+1. Created and attached an **EBS volume** to an EC2 instance, then mounted it inside Linux.
+2. Took an **EBS snapshot** and restored it as a new volume.
+3. Created a custom **AMI** from an instance and launched another instance from it.
+4. Set up an **EFS file system** and mounted it across two EC2 instances for shared storage.
+
+## Screenshots
+![EBS Volume](screenshots/ebs-volume.png)
+![Snapshot](screenshots/snapshot.png)
+![AMI Creation](screenshots/ami-create.png)
+![EFS Mount](screenshots/efs-mount.png)
+
+
 
 
