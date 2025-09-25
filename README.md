@@ -126,7 +126,7 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 4. Set up an **EFS file system** and mounted it across two EC2 instances for shared storage.
 
 ## Screenshots
-![EBS Volume](screenshots/ebs-volume.png)
+![EBS Volume](images/CreateEBSVolumeAndAttach.png)
 ![Snapshot](screenshots/snapshot.png)
 ![AMI Creation](screenshots/ami-create.png)
 ![EFS Mount](screenshots/efs-mount.png)
