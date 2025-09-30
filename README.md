@@ -157,7 +157,7 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 4. Terminated one EC2 instance manually → ELB rerouted traffic and ASG replaced the instance.  
 
 ## Screenshots
-![ALB Setup](images/CreateALB.png)  
+![ALB Setup](images/CreateELB.png)  
 ![ASG Config](images/ASGConfig.png)  
 ![Scaling Event](images/ScalingEvent.png)  
 ![Health Checks](images/ELBHealthCheck.png)  
