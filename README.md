@@ -131,6 +131,38 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![AMI Creation](images/CustomAMItoNewEC2.png)
 ![EFS Mount](images/EFS.png)
 
+# Section 8 – High Availability & Scalability (ELB & ASG)
+
+## What I Learned
+- **Elastic Load Balancers (ELB):**
+  - Distribute traffic across multiple EC2 instances in different Availability Zones (AZs).
+  - Provide health checks to ensure traffic only goes to healthy instances.
+  - Types:
+    - **Application Load Balancer (ALB):** Layer 7, supports path and host-based routing.
+    - **Network Load Balancer (NLB):** Layer 4, ultra-low latency, millions of requests/sec.
+    - **Gateway Load Balancer (GWLB):** Integrates with firewalls and network appliances.
+- **Auto Scaling Groups (ASG):**
+  - Automatically increase/decrease the number of EC2 instances based on demand.
+  - Configured with **min, max, desired capacity** to balance performance and cost.
+  - Integrates with **CloudWatch alarms** (e.g., CPU usage) for scaling triggers.
+  - Ensures high availability by replacing failed instances automatically.
+- **High Availability & Fault Tolerance:**
+  - Deploy across multiple AZs to survive failures in one data center.
+  - Combined ELB + ASG = resilient, scalable architecture.
+
+## What I Did
+1. Created an **Application Load Balancer (ALB)** and registered EC2 targets across two Availability Zones.  
+2. Configured an **Auto Scaling Group (ASG)** with min=1, max=3, and scaling policies linked to CloudWatch alarms.  
+3. Simulated high CPU load → ASG launched new instances automatically.  
+4. Terminated one EC2 instance manually → ELB rerouted traffic and ASG replaced the instance.  
+
+## Screenshots
+![ALB Setup](images/ALBSetup.png)  
+![ASG Config](images/ASGConfig.png)  
+![Scaling Event](images/ScalingEvent.png)  
+![Health Checks](images/ELBHealthCheck.png)  
+
+
 
 
 
