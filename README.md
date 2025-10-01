@@ -10,7 +10,7 @@ Each section contains:
 ## Sections Completed
 - [x] IAM & AWS Fundamentals
 - [x] EC2 Deep Dive (in progress)
-- [ ] Elastic Load Balancing & Auto Scaling
+- [x] Elastic Load Balancing & Auto Scaling
 - [ ] S3 & CloudFront
 - [ ] RDS, DynamoDB, Aurora
 - [ ] VPC & Networking
@@ -157,10 +157,10 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 4. Terminated one EC2 instance manually → ELB rerouted traffic and ASG replaced the instance.  
 
 ## Screenshots
-![ALB Setup](images/CreateELB.png)  
-![ASG Config](images/ASGConfig.png)  
-![Scaling Event](images/ScalingEvent.png)  
-![Health Checks](images/ELBHealthCheck.png)  
+![UsingStressToTriggerAutoScaling](images/UsingStress.png)  
+![ScalingPolicy](images/ScalingPolicy.png)  
+![ScalingLimits](images/ScalingELimits.png)  
+![Capacity](images/Capacity.png)  
 
 
 
