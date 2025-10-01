@@ -159,7 +159,7 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ## Screenshots
 ![UsingStressToTriggerAutoScaling](images/UsingStress.png)  
 ![ScalingPolicy](images/ScalingPolicy.png)  
-![ScalingLimits](images/ScalingELimits.png)  
+![ScalingLimits](images/ScalingLimits.png)  
 ![Capacity](images/Capacity.png)  
 
 
