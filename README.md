@@ -7,15 +7,27 @@ Each section contains:
 - 📸 Screenshots of AWS Console/CLI
 - 💻 Commands & configs (where relevant)
 
-## Sections Completed
-- [x] IAM & AWS Fundamentals
-- [x] EC2 Deep Dive (in progress)
-- [x] Elastic Load Balancing & Auto Scaling
-- [ ] S3 & CloudFront
-- [ ] RDS, DynamoDB, Aurora
-- [ ] VPC & Networking
-- [ ] Security & Monitoring
-- [ ] Architecture & Exam Prep
+## Sections Completed (AWS SAA – Stephane Maarek)
+
+- [x] Section 3 – IAM & AWS Fundamentals
+- [x] Section 4 – EC2 Fundamentals
+- [x] Section 5 – EC2 Deep Dive
+- [x] Section 6 – EC2 Advanced: Placement Groups
+- [x] Section 7 – EC2 Instance Storage
+- [x] Section 8 – High Availability & Scalability: ELB & ASG
+- [ ] Section 9 – RDS, Aurora & ElastiCache
+- [ ] Section 10 – Route 53
+- [ ] Section 11 – S3
+- [ ] Section 12 – CloudFront
+- [ ] Section 13 – Databases Overview (DynamoDB, etc.)
+- [ ] Section 14 – VPC & Networking
+- [ ] Section 15 – Monitoring & Audit (CloudWatch, CloudTrail, X-Ray)
+- [ ] Section 16 – Identity Federation & Cognito
+- [ ] Section 17 – AWS Security & Encryption
+- [ ] Section 18 – Other Compute (Lambda, ECS, Fargate, Batch, etc.)
+- [ ] Section 19 – Other Services (SQS, SNS, Kinesis, etc.)
+- [ ] Section 20 – Architecting & Well-Architected Framework
+- [ ] Section 21+ – Exam Preparation & Practice Exams
 
 ---
 
@@ -161,6 +173,38 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![ScalingPolicy](images/ScalingPolicy.png)  
 ![ScalingLimits](images/ScalingLimits.png)  
 ![Capacity](images/Capacity.png)  
+
+# Section 9 – AWS Fundamentals: RDS, Aurora, and ElastiCache
+
+## What I Learned
+- **RDS (Relational Database Service)**:
+  - Managed relational database service (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, Aurora).
+  - Provides automated backups, Multi-AZ failover, read replicas, and scaling.
+  - Handles patching, upgrades, and monitoring so you don’t have to manage servers directly.
+- **Aurora**:
+  - AWS proprietary, MySQL- and PostgreSQL-compatible relational database.
+  - Up to 5x faster than MySQL and 3x faster than PostgreSQL.
+  - Auto-scaling storage (up to 128 TB), high availability with replication across 3 AZs.
+  - Ideal for enterprise workloads needing high performance + managed infrastructure.
+- **ElastiCache**:
+  - Managed in-memory caching (Redis, Memcached).
+  - Use cases: reduce read load on RDS/DynamoDB, session stores, real-time leaderboards.
+  - Improves performance by offloading frequent queries from databases.
+
+## What I Did
+1. Created an **RDS instance** (MySQL) in a Multi-AZ deployment for high availability.
+2. Configured a **Read Replica** for scaling read-heavy workloads.
+3. Created an **Aurora cluster** to test high performance and automatic replication.
+4. Deployed an **ElastiCache Redis cluster**, connected it to an EC2 app to cache queries.
+5. Demonstrated failover by simulating instance downtime → observed automatic failover.
+
+## Screenshots
+![RDS Creation](images/RDS-Create.png)
+![Multi-AZ Deployment](images/RDS-MultiAZ.png)
+![Read Replica](images/RDS-ReadReplica.png)
+![Aurora Cluster](images/Aurora-Cluster.png)
+![ElastiCache Cluster](images/ElastiCache-Redis.png)
+
 
 
 
