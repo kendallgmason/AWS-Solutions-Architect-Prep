@@ -205,11 +205,6 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![Aurora Cluster](images/Aurora-Cluster.png)
 ![ElastiCache Cluster](images/ElastiCache-Redis.png)
 
-Perfect — thanks for clarifying 🙌 You want the **Route 53 write-up** in the same **“What I learned / What I did / Screenshots”** structure you used for your IAM notes.
-
-Here’s your **Session 10 – Route 53** draft:
-
----
 
 ## Session 10 – Route 53 (DNS & Domain Management)
 
