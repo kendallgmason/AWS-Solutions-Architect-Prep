@@ -15,8 +15,8 @@ Each section contains:
 - [x] Section 6 – EC2 Advanced: Placement Groups
 - [x] Section 7 – EC2 Instance Storage
 - [x] Section 8 – High Availability & Scalability: ELB & ASG
-- [ ] Section 9 – RDS, Aurora & ElastiCache
-- [ ] Section 10 – Route 53
+- [x] Section 9 – RDS, Aurora & ElastiCache
+- [x] Section 10 – Route 53
 - [ ] Section 11 – S3
 - [ ] Section 12 – CloudFront
 - [ ] Section 13 – Databases Overview (DynamoDB, etc.)
