@@ -240,12 +240,6 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 * Set up a **health check** for an EC2 instance and associated it with a failover record.
 * Tested resolution using `nslookup` and `dig` to verify records propagated correctly.
 
----
-
-## Screenshots
-![Hosted Zone](images/Route53-HostedZone.png)  
-![Create A Record](images/Route53-ARecord.png)  
-![Health Check](images/Route53-HealthCheck.png)  
 
 
 
