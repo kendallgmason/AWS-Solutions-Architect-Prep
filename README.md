@@ -205,6 +205,57 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 ![Aurora Cluster](images/Aurora-Cluster.png)
 ![ElastiCache Cluster](images/ElastiCache-Redis.png)
 
+Perfect — thanks for clarifying 🙌 You want the **Route 53 write-up** in the same **“What I learned / What I did / Screenshots”** structure you used for your IAM notes.
+
+Here’s your **Session 10 – Route 53** draft:
+
+---
+
+## Session 10 – Route 53 (DNS & Domain Management)
+
+### What I learned
+
+* Route 53 is AWS’s **scalable DNS and domain registration service**.
+* A **Hosted Zone** stores DNS records for a domain.
+
+  * Public hosted zones are internet-accessible.
+  * Private hosted zones are only resolvable inside a VPC.
+* Common DNS record types:
+
+  * **A / AAAA** → map domain to IPv4/IPv6
+  * **CNAME** → alias one name to another
+  * **MX** → email routing
+  * **TXT** → verification, SPF/DKIM
+* **Routing Policies** control how traffic is directed:
+
+  * Simple, Weighted, Latency-based, Failover, Geolocation, Multi-value answer.
+* Route 53 can perform **health checks** and failover if endpoints are unhealthy.
+* Domain registration and DNS hosting can be done entirely in Route 53.
+
+---
+
+### What I did
+
+* Registered a sample domain in Route 53 (used a sandbox/demo domain for practice).
+* Created a **public hosted zone** and added DNS records:
+
+  * `A` record pointing to an EC2 instance public IP.
+  * `CNAME` record pointing a subdomain (`www`) to the root domain.
+* Configured a **weighted routing policy** to split traffic between two endpoints.
+* Set up a **health check** for an EC2 instance and associated it with a failover record.
+* Tested resolution using `nslookup` and `dig` to verify records propagated correctly.
+
+---
+
+## Screenshots
+![Hosted Zone](images/Route53-HostedZone.png)  
+![Create A Record](images/Route53-ARecord.png)  
+![Health Check](images/Route53-HealthCheck.png)  
+
+
+
+
+
 
 
 
