@@ -199,11 +199,10 @@ While working through these AWS SAA labs, I’ve ensured all resources stay with
 5. Demonstrated failover by simulating instance downtime → observed automatic failover.
 
 ## Screenshots
-![RDS Creation](images/RDS-Create.png)
-![Multi-AZ Deployment](images/RDS-MultiAZ.png)
-![Read Replica](images/RDS-ReadReplica.png)
-![Aurora Cluster](images/Aurora-Cluster.png)
-![ElastiCache Cluster](images/ElastiCache-Redis.png)
+![RDS Creation](images/RDS.png)
+![Read Replica](images/Read.png)
+![Aurora](images/Aurora.png)
+![ElastiCache Cluster](images/ElastiCache.png)
 
 
 ## Session 10 – Route 53 (DNS & Domain Management)
